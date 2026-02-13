@@ -9,16 +9,16 @@ export default function GiftPage() {
 
   const giftData: Record<GiftType, { img: string; caption: string }[]> = {
     teddy: [
-      { img: "/download.jpeg", caption: "Soft & Cute Teddy 🧸" },
-      { img: "/download.jpeg", caption: "Hug Me Teddy 🤍" },
+      { img: "/teddy.jpeg", caption: "I'm your teddy 🧸" },
+      { img: "/teddys.jpeg", caption: "how's your teddy 🤍" },
     ],
     chocolate: [
-      { img: "/loaded-with-chocolates.webp", caption: "Sweet Love 🍫" },
-      { img: "/loaded-with-chocolates.webp", caption: "For My Sweetheart ❤️" },
+      { img: "/chocolate.jpeg", caption: "I'm your chocolate 🍫" },
+      { img: "/choco.jpeg", caption: "For My Sweetheart ❤️" },
     ],
     flowers: [
-      { img: "/download (1).jpeg", caption: "Beautiful Roses 🌹" },
-      { img: "/download (1).jpeg", caption: "Blooming Love 💐" },
+      { img: "/flower.jpeg", caption: "You're My Rose 🌹" },
+      { img: "/WhatsApp Image 2026-02-13 at 11.49.22 AM.jpeg", caption: "Blooming Love 💐" },
     ],
   };
 
