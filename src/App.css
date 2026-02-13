@@ -90,3 +90,347 @@
   background-color: #FC4985;
 }
 /*scroll bar ends*/
+
+.gift-container {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gift-card {
+  width: 180px;
+  padding: 15px;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.gift-card:hover {
+  transform: translateY(-8px);
+}
+
+.gift-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.gift-card {
+  transition: transform 0.3s ease;
+}
+
+.gift-card:hover {
+  transform: scale(1.05);
+}
+/* Page styling */
+.gift-page {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Title */
+.gift-title {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #ff4d6d;
+}
+
+/* Empty message */
+.empty-message {
+  font-size: 18px;
+  color: gray;
+}
+
+/* Enhanced card */
+.enhanced-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(255, 77, 109, 0.2);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.enhanced-card img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.enhanced-card:hover {
+  transform: translateY(-8px) scale(1.03);
+}
+
+/* Back button */
+.back-button {
+  margin-top: 30px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(45deg, #ff4d6d, #ff758f);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.back-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(255, 77, 109, 0.4);
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Page styling */
+.gift-page {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Title */
+.gift-title {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #ff4d6d;
+}
+
+/* Empty message */
+.empty-message {
+  font-size: 18px;
+  color: gray;
+}
+
+/* Enhanced card */
+.enhanced-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(255, 77, 109, 0.2);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.enhanced-card img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.enhanced-card:hover {
+  transform: translateY(-8px) scale(1.03);
+}
+
+/* Back button */
+.back-button {
+  margin-top: 30px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(45deg, #ff4d6d, #ff758f);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.back-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(255, 77, 109, 0.4);
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ========== RESET ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ========== BACKGROUND ANIMATION ========== */
+.centered-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #ffdde1, #fccb90);
+  background-size: 400% 400%;
+  animation: gradientBG 12s ease infinite;
+  padding: 20px;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Floating hearts */
+.centered-container::before,
+.centered-container::after {
+  content: "❤";
+  position: absolute;
+  font-size: 40px;
+  color: rgba(255, 255, 255, 0.3);
+  animation: float 6s infinite ease-in-out;
+}
+
+.centered-container::before {
+  left: 10%;
+  top: 80%;
+}
+
+.centered-container::after {
+  right: 15%;
+  top: 90%;
+  animation-delay: 2s;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-40px); }
+  100% { transform: translateY(0px); }
+}
+
+/* ========== MAIN CARD ========== */
+.valentine-container {
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(15px);
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* ========== IMAGE ========== */
+.main-gif {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* ========== TEXT ========== */
+.text-container {
+  margin: 10px 0;
+  font-size: clamp(18px, 4vw, 28px);
+  font-weight: 600;
+  color: #d6336c;
+}
+
+/* ========== BUTTONS ========== */
+button {
+  padding: 12px 25px;
+  margin: 10px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-weight: bold;
+}
+
+.yes-button {
+  background: linear-gradient(45deg, #ff4d6d, #ff758f);
+  color: white;
+  box-shadow: 0 5px 15px rgba(255, 0, 100, 0.4);
+}
+
+.yes-button:hover {
+  transform: scale(1.1);
+}
+
+.no-button {
+  background: #ddd;
+}
+
+.no-button:hover {
+  background: #bbb;
+}
+
+/* ========== GIFT SECTION ========== */
+.gift-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.gift-card {
+  width: 150px;
+  background: white;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: 0.3s ease;
+}
+
+.gift-card:hover {
+  transform: translateY(-8px);
+}
+
+.gift-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.gift-card h3 {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 480px) {
+  .valentine-container {
+    padding: 20px;
+  }
+
+  .gift-card {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  button {
+    width: 100%;
+    max-width: 250px;
+  }
+}
+
