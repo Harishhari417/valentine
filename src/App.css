@@ -433,44 +433,4 @@ button {
     max-width: 250px;
   }
 }
-.gift-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  width: 100%;
-  padding: 10px;
-}
-
-.gift-card {
-  background: white;
-  border-radius: 16px;
-  overflow: hidden; /* Important */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-.gift-card img {
-  width: 100%;
-  height: 220px;        /* Fixed height */
-  object-fit: cover;    /* Makes image fit perfectly */
-  display: block;
-}
-
-.gift-card p {
-  padding: 10px;
-  font-size: 16px;
-}
-@media (max-width: 480px) {
-  .gift-card img {
-    height: 180px;
-  }
-
-  .gift-title {
-    font-size: 20px;
-  }
-
-  .gift-card p {
-    font-size: 14px;
-  }
-}
 
