@@ -56,6 +56,12 @@ const gifts = [
     img: "download (1).jpeg",
     type: "flowers",
   },
+  {
+    id: 4,
+    name: "Special Surprise 🎁",
+    img: "download.png",
+    type: "special",
+  }
 ];
 
 
