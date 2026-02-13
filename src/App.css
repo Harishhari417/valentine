@@ -214,3 +214,14 @@ button {
   }
 }
 
+.gift-video {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+  .gift-video {
+    max-width: 100%;
+  }
+}
